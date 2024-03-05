@@ -14,4 +14,6 @@ Este repositorio contiene un programa Java que implementa un sistema de gestión
 
 ## Para compilar:
 
+```bash
 javac ISSS.java && java ISSS
+
