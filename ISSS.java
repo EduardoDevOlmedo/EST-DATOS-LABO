@@ -1,4 +1,3 @@
-package laboratorio;
 import java.util.Scanner;
 
 class Node {
@@ -51,7 +50,7 @@ class ListaEnlazadaSimple {
     public boolean search_name(String patient) {
         Node current = head;
         while (current != null) {
-            if (current.paciente == patient) { //itera hasta llegar al dato a buscar
+            if (current.paciente.equals(patient)) { //itera hasta llegar al dato a buscar
                 return true;
             }
             current = current.next;
@@ -155,7 +154,7 @@ public class ISSS {
                             System.out.println("Ingrese el nombre del paciente tal y como se ingresó:");
                             String patient = leer.next();
                             if (list.search_name(patient)) {
-                                System.out.println("El paciente " + patient + "se encuentra en el sistema de citas.");
+                                System.out.println("El paciente " + patient + " se encuentra en el sistema de citas.");
                             } else {
                                 System.out.println("El paciente " + patient + " NO se encuentra en el sistema de citas.");
                             }
